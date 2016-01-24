@@ -1,8 +1,15 @@
-import UIKit
-import XCTest
-import BackToTheFuture
+//
+//  BackToTheFutureTests.swift
+//  BackToTheFutureTests
+//
+//  Created by Tadeas Kriz on 24/01/16.
+//  Copyright © 2016 Brightify. All rights reserved.
+//
 
-class Tests: XCTestCase {
+import XCTest
+@testable import BackToTheFuture
+
+class BackToTheFutureTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -16,12 +23,12 @@ class Tests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184A87A71C55081E00D4BC6D /* BackToTheFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 184A87A61C55081E00D4BC6D /* BackToTheFuture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		184A87AE1C55081E00D4BC6D /* BackToTheFuture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A87A31C55081E00D4BC6D /* BackToTheFuture.framework */; };
-		184A87B31C55081E00D4BC6D /* BackToTheFutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87B21C55081E00D4BC6D /* BackToTheFutureTests.swift */; };
+		184A87A71C55081E00D4BC6D /* Staging.h in Headers */ = {isa = PBXBuildFile; fileRef = 184A87A61C55081E00D4BC6D /* Staging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		184A87AE1C55081E00D4BC6D /* SwiftKitStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A87A31C55081E00D4BC6D /* SwiftKitStaging.framework */; };
 		184A87C31C5508D600D4BC6D /* Array+MoreFunctionalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87BD1C5508D600D4BC6D /* Array+MoreFunctionalMethods.swift */; };
 		184A87C41C5508D600D4BC6D /* DispatchHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87BE1C5508D600D4BC6D /* DispatchHelpers.swift */; };
 		184A87C51C5508D600D4BC6D /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87BF1C5508D600D4BC6D /* GlobalFunctions.swift */; };
@@ -17,7 +16,7 @@
 		184A87C71C5508D600D4BC6D /* MoreFunctionalGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87C11C5508D600D4BC6D /* MoreFunctionalGlobals.swift */; };
 		184A87C81C5508D600D4BC6D /* ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87C21C5508D600D4BC6D /* ThreadLocal.swift */; };
 		184A87CA1C5509F500D4BC6D /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A87C91C5509F500D4BC6D /* Cancellable.swift */; };
-		184A87CF1C550A9000D4BC6D /* BackToTheFuture.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 184A87CC1C550A9000D4BC6D /* BackToTheFuture.podspec */; };
+		184A87CF1C550A9000D4BC6D /* SwiftKitStaging.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 184A87CC1C550A9000D4BC6D /* SwiftKitStaging.podspec */; };
 		184A87D01C550A9000D4BC6D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 184A87CD1C550A9000D4BC6D /* LICENSE */; };
 		184A87D11C550A9000D4BC6D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 184A87CE1C550A9000D4BC6D /* README.md */; };
 /* End PBXBuildFile section */
@@ -33,11 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		184A87A31C55081E00D4BC6D /* BackToTheFuture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackToTheFuture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		184A87A61C55081E00D4BC6D /* BackToTheFuture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackToTheFuture.h; sourceTree = "<group>"; };
+		184A87A31C55081E00D4BC6D /* SwiftKitStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKitStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		184A87A61C55081E00D4BC6D /* Staging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Staging.h; sourceTree = "<group>"; };
 		184A87A81C55081E00D4BC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184A87AD1C55081E00D4BC6D /* BackToTheFutureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackToTheFutureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		184A87B21C55081E00D4BC6D /* BackToTheFutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToTheFutureTests.swift; sourceTree = "<group>"; };
+		184A87AD1C55081E00D4BC6D /* SwiftKitStaging.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitStaging.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184A87B41C55081E00D4BC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184A87BD1C5508D600D4BC6D /* Array+MoreFunctionalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+MoreFunctionalMethods.swift"; sourceTree = "<group>"; };
 		184A87BE1C5508D600D4BC6D /* DispatchHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchHelpers.swift; sourceTree = "<group>"; };
@@ -46,7 +44,7 @@
 		184A87C11C5508D600D4BC6D /* MoreFunctionalGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreFunctionalGlobals.swift; sourceTree = "<group>"; };
 		184A87C21C5508D600D4BC6D /* ThreadLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadLocal.swift; sourceTree = "<group>"; };
 		184A87C91C5509F500D4BC6D /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
-		184A87CC1C550A9000D4BC6D /* BackToTheFuture.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BackToTheFuture.podspec; sourceTree = "<group>"; };
+		184A87CC1C550A9000D4BC6D /* SwiftKitStaging.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftKitStaging.podspec; sourceTree = "<group>"; };
 		184A87CD1C550A9000D4BC6D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		184A87CE1C550A9000D4BC6D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184A87AE1C55081E00D4BC6D /* BackToTheFuture.framework in Frameworks */,
+				184A87AE1C55081E00D4BC6D /* SwiftKitStaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +81,8 @@
 		184A87A41C55081E00D4BC6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				184A87A31C55081E00D4BC6D /* BackToTheFuture.framework */,
-				184A87AD1C55081E00D4BC6D /* BackToTheFutureTests.xctest */,
+				184A87A31C55081E00D4BC6D /* SwiftKitStaging.framework */,
+				184A87AD1C55081E00D4BC6D /* SwiftKitStaging.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +96,7 @@
 				184A87C01C5508D600D4BC6D /* Int+Functionals.swift */,
 				184A87C11C5508D600D4BC6D /* MoreFunctionalGlobals.swift */,
 				184A87C21C5508D600D4BC6D /* ThreadLocal.swift */,
-				184A87A61C55081E00D4BC6D /* BackToTheFuture.h */,
+				184A87A61C55081E00D4BC6D /* Staging.h */,
 				184A87A81C55081E00D4BC6D /* Info.plist */,
 				184A87C91C5509F500D4BC6D /* Cancellable.swift */,
 			);
@@ -108,7 +106,6 @@
 		184A87B11C55081E00D4BC6D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				184A87B21C55081E00D4BC6D /* BackToTheFutureTests.swift */,
 				184A87B41C55081E00D4BC6D /* Info.plist */,
 			);
 			path = Tests;
@@ -117,7 +114,7 @@
 		184A87CB1C550A7C00D4BC6D /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				184A87CC1C550A9000D4BC6D /* BackToTheFuture.podspec */,
+				184A87CC1C550A9000D4BC6D /* SwiftKitStaging.podspec */,
 				184A87CD1C550A9000D4BC6D /* LICENSE */,
 				184A87CE1C550A9000D4BC6D /* README.md */,
 			);
@@ -131,16 +128,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184A87A71C55081E00D4BC6D /* BackToTheFuture.h in Headers */,
+				184A87A71C55081E00D4BC6D /* Staging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		184A87A21C55081E00D4BC6D /* BackToTheFuture */ = {
+		184A87A21C55081E00D4BC6D /* SwiftKitStaging */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 184A87B71C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "BackToTheFuture" */;
+			buildConfigurationList = 184A87B71C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "SwiftKitStaging" */;
 			buildPhases = (
 				184A879E1C55081E00D4BC6D /* Sources */,
 				184A879F1C55081E00D4BC6D /* Frameworks */,
@@ -151,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = BackToTheFuture;
+			name = SwiftKitStaging;
 			productName = BackToTheFuture;
-			productReference = 184A87A31C55081E00D4BC6D /* BackToTheFuture.framework */;
+			productReference = 184A87A31C55081E00D4BC6D /* SwiftKitStaging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		184A87AC1C55081E00D4BC6D /* BackToTheFutureTests */ = {
+		184A87AC1C55081E00D4BC6D /* SwiftKitStagingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 184A87BA1C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "BackToTheFutureTests" */;
+			buildConfigurationList = 184A87BA1C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "SwiftKitStagingTests" */;
 			buildPhases = (
 				184A87A91C55081E00D4BC6D /* Sources */,
 				184A87AA1C55081E00D4BC6D /* Frameworks */,
@@ -169,9 +166,9 @@
 			dependencies = (
 				184A87B01C55081E00D4BC6D /* PBXTargetDependency */,
 			);
-			name = BackToTheFutureTests;
+			name = SwiftKitStagingTests;
 			productName = BackToTheFutureTests;
-			productReference = 184A87AD1C55081E00D4BC6D /* BackToTheFutureTests.xctest */;
+			productReference = 184A87AD1C55081E00D4BC6D /* SwiftKitStaging.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 184A879D1C55081E00D4BC6D /* Build configuration list for PBXProject "BackToTheFuture" */;
+			buildConfigurationList = 184A879D1C55081E00D4BC6D /* Build configuration list for PBXProject "SwiftKitStaging" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				184A87A21C55081E00D4BC6D /* BackToTheFuture */,
-				184A87AC1C55081E00D4BC6D /* BackToTheFutureTests */,
+				184A87A21C55081E00D4BC6D /* SwiftKitStaging */,
+				184A87AC1C55081E00D4BC6D /* SwiftKitStagingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184A87D01C550A9000D4BC6D /* LICENSE in Resources */,
-				184A87CF1C550A9000D4BC6D /* BackToTheFuture.podspec in Resources */,
+				184A87CF1C550A9000D4BC6D /* SwiftKitStaging.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184A87B31C55081E00D4BC6D /* BackToTheFutureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		184A87B01C55081E00D4BC6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 184A87A21C55081E00D4BC6D /* BackToTheFuture */;
+			target = 184A87A21C55081E00D4BC6D /* SwiftKitStaging */;
 			targetProxy = 184A87AF1C55081E00D4BC6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -364,8 +360,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.BackToTheFuture;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.SwiftKitStaging;
+				PRODUCT_NAME = SwiftKitStaging;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -382,8 +378,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.BackToTheFuture;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.SwiftKitStaging;
+				PRODUCT_NAME = SwiftKitStaging;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -393,8 +389,8 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.BackToTheFutureTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.SwiftKitStagingTests;
+				PRODUCT_NAME = SwiftKitStaging;
 			};
 			name = Debug;
 		};
@@ -403,15 +399,15 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.BackToTheFutureTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.brightify.SwiftKitStagingTests;
+				PRODUCT_NAME = SwiftKitStaging;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		184A879D1C55081E00D4BC6D /* Build configuration list for PBXProject "BackToTheFuture" */ = {
+		184A879D1C55081E00D4BC6D /* Build configuration list for PBXProject "SwiftKitStaging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184A87B51C55081E00D4BC6D /* Debug */,
@@ -420,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		184A87B71C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "BackToTheFuture" */ = {
+		184A87B71C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "SwiftKitStaging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184A87B81C55081E00D4BC6D /* Debug */,
@@ -429,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		184A87BA1C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "BackToTheFutureTests" */ = {
+		184A87BA1C55081E00D4BC6D /* Build configuration list for PBXNativeTarget "SwiftKitStagingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184A87BB1C55081E00D4BC6D /* Debug */,

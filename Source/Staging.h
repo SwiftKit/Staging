@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for BackToTheFuture.
-FOUNDATION_EXPORT double BackToTheFutureVersionNumber;
+FOUNDATION_EXPORT double StagingVersionNumber;
 
 //! Project version string for BackToTheFuture.
-FOUNDATION_EXPORT const unsigned char BackToTheFutureVersionString[];
+FOUNDATION_EXPORT const unsigned char StagingVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BackToTheFuture/PublicHeader.h>
 

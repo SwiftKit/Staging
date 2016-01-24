@@ -1,9 +1,9 @@
-# BackToTheFuture
+# SwiftKit Staging
 
-[![CI Status](http://img.shields.io/travis/Tadeas Kriz/BackToTheFuture.svg?style=flat)](https://travis-ci.org/Tadeas Kriz/BackToTheFuture)
-[![Version](https://img.shields.io/cocoapods/v/BackToTheFuture.svg?style=flat)](http://cocoapods.org/pods/BackToTheFuture)
-[![License](https://img.shields.io/cocoapods/l/BackToTheFuture.svg?style=flat)](http://cocoapods.org/pods/BackToTheFuture)
-[![Platform](https://img.shields.io/cocoapods/p/BackToTheFuture.svg?style=flat)](http://cocoapods.org/pods/BackToTheFuture)
+[![CI Status](http://img.shields.io/travis/SwiftKit/Staging.svg?style=flat)](https://travis-ci.org/SwiftKit/Staging)
+[![Version](https://img.shields.io/cocoapods/v/SwiftKitStaging.svg?style=flat)](http://cocoapods.org/pods/SwiftKitStaging)
+[![License](https://img.shields.io/cocoapods/l/SwiftKitStaging.svg?style=flat)](http://cocoapods.org/pods/SwiftKitStaging)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftKitStaging.svg?style=flat)](http://cocoapods.org/pods/SwiftKitStaging)
 
 ## Usage
 
@@ -17,7 +17,7 @@ BackToTheFuture is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "BackToTheFuture"
+pod "SwiftKitStaging"
 ```
 
 ## Author

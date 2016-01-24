@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftKitStaging"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Staging for new features that are to be added into SwiftKit, but does not have final API."
   s.description      = <<-DESC
                         Sources in Staging is used in various SwiftKit libraries, however use it only in case you do not care about needing to update your codebase every other day.

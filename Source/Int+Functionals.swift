@@ -6,9 +6,9 @@
 //
 //
 
-internal extension Int {
+public extension Int {
     
-    internal func times(@noescape closure: () -> ()) {
+    public func times(@noescape closure: () -> ()) {
         (0..<self).forEach { _ in closure() }
     }
     

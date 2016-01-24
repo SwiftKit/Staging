@@ -13,7 +13,11 @@ public protocol Cancellable {
 
 /// A token that can be used to cancel requests
 public struct CancellableToken: Cancellable {
-    let cancelAction: () -> ()
+    let cancelAction: Void -> Void
+    
+    public init(cancelAction: Void -> Void) {
+        self.cancelAction = cancelAction
+    }
     
     public func cancel() {
         cancelAction()

@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "BackToTheFuture"
+  s.name             = "SwiftKit/BackToTheFuture"
   s.version          = "0.1.0"
   s.summary          = "Staging for new features that are to be added into SwiftKit, but does not have final API."
   s.description      = <<-DESC

@@ -12,7 +12,7 @@ public func inferredType<T>() -> T.Type {
     return T.self
 }
 
-public func associatedObject<T: AnyObject>(base: AnyObject, key: UnsafePointer<UInt8>, @noescape initializer: () -> T) -> T {
+public func associatedObject<T: AnyObject>(_ base: AnyObject, key: UnsafePointer<UInt8>, initializer: () -> T) -> T {
     if let associated = objc_getAssociatedObject(base, key) as? T {
         return associated
     }
@@ -22,6 +22,6 @@ public func associatedObject<T: AnyObject>(base: AnyObject, key: UnsafePointer<U
     return associated
 }
 
-public func associateObject<T: AnyObject>(base: AnyObject, key: UnsafePointer<UInt8>, value: T) {
+public func associateObject<T: AnyObject>(_ base: AnyObject, key: UnsafePointer<UInt8>, value: T) {
     objc_setAssociatedObject(base, key, value, .OBJC_ASSOCIATION_RETAIN)
 }

@@ -8,14 +8,14 @@
 
 import Foundation
 
-public func cancellableDispatchAfter(seconds: Double, queue: dispatch_queue_t = dispatch_get_main_queue(), block: () -> ()) -> Cancellable {
-    let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))
+public func cancellableDispatchAfter(_ seconds: Double, queue: DispatchQueue = DispatchQueue.main, block: @escaping () -> ()) -> Cancellable {
+    let delay = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
     return cancellableDispatchAfter(delay, on: queue, block: block)
 }
 
-public func cancellableDispatchAfter(time: dispatch_time_t, on queue: dispatch_queue_t, block: () -> ()) -> Cancellable {
+public func cancellableDispatchAfter(_ time: DispatchTime, on queue: DispatchQueue, block: @escaping () -> ()) -> Cancellable {
     var cancelled: Bool = false
-    dispatch_after(time, queue) {
+    queue.asyncAfter(deadline: time) {
         if cancelled == false {
             block()
         }
@@ -25,10 +25,10 @@ public func cancellableDispatchAfter(time: dispatch_time_t, on queue: dispatch_q
     }
 }
 
-public func cancellableDispatchAsync(on queue: dispatch_queue_t = dispatch_get_main_queue(), block: () -> ()) -> Cancellable {
+public func cancellableDispatchAsync(on queue: DispatchQueue = DispatchQueue.main, block: @escaping () -> ()) -> Cancellable {
     var cancelled: Bool = false
     
-    dispatch_async(queue) {
+    queue.async {
         if cancelled == false {
             block()
         }

@@ -8,36 +8,36 @@
 
 import Foundation
 
-public class ThreadLocal<T: AnyObject>: ThreadLocalParametrized<Void, T> {
+open class ThreadLocal<T: AnyObject>: ThreadLocalParametrized<Void, T> {
     
-    public convenience init(create: () -> T) {
-        self.init(id: NSUUID().UUIDString, create: create)
+    public convenience init(create: @escaping () -> T) {
+        self.init(id: UUID().uuidString, create: create)
     }
     
-    public override init(id: String, create: () -> T) {
+    public override init(id: String, create: @escaping () -> T) {
         super.init(id: id, create: create)
     }
     
-    public func get() -> T {
+    open func get() -> T {
         return super.get()
     }
 }
 
-public class ThreadLocalParametrized<PARAMS, T: AnyObject> {
-    private let id: String
-    private let create: PARAMS -> T
+open class ThreadLocalParametrized<PARAMS, T: AnyObject> {
+    fileprivate let id: String
+    fileprivate let create: (PARAMS) -> T
     
-    public convenience init(create: PARAMS -> T) {
-        self.init(id: NSUUID().UUIDString, create: create)
+    public convenience init(create: @escaping (PARAMS) -> T) {
+        self.init(id: UUID().uuidString, create: create)
     }
     
-    public init(id: String, create: PARAMS -> T) {
+    public init(id: String, create: @escaping (PARAMS) -> T) {
         self.id = id
         self.create = create
     }
     
-    public func get(parameters: PARAMS) -> T {
-        if let cachedObject = NSThread.currentThread().threadDictionary[id] as? T {
+    open func get(_ parameters: PARAMS) -> T {
+        if let cachedObject = Thread.current.threadDictionary[id] as? T {
             return cachedObject
         } else {
             let newObject = create(parameters)
@@ -46,12 +46,12 @@ public class ThreadLocalParametrized<PARAMS, T: AnyObject> {
         }
     }
     
-    public func set(value: T) {
-        NSThread.currentThread().threadDictionary[id] = value
+    open func set(_ value: T) {
+        Thread.current.threadDictionary[id] = value
     }
     
-    public func remove() {
-        NSThread.currentThread().threadDictionary.removeObjectForKey(id)
+    open func remove() {
+        Thread.current.threadDictionary.removeObject(forKey: id)
     }
     
 }

@@ -13,9 +13,9 @@ public protocol Cancellable {
 
 /// A token that can be used to cancel requests
 public struct CancellableToken: Cancellable {
-    let cancelAction: Void -> Void
+    let cancelAction: () -> Void
     
-    public init(cancelAction: Void -> Void) {
+    public init(cancelAction: @escaping () -> Void) {
         self.cancelAction = cancelAction
     }
     

@@ -8,7 +8,7 @@
 
 public extension Int {
     
-    public func times(@noescape closure: () -> ()) {
+    public func times(_ closure: () -> ()) {
         (0..<self).forEach { _ in closure() }
     }
     
